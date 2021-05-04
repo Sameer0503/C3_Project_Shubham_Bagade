@@ -9,7 +9,7 @@ class RestaurantServiceTest {
 
     RestaurantService service = new RestaurantService();
     Restaurant restaurant;
-    //REFACTOR ALL THE REPEATED LINES OF CODE
+
     @BeforeEach
     private void setup(){
         LocalTime openingTime = LocalTime.parse("10:30:00");
@@ -35,9 +35,8 @@ class RestaurantServiceTest {
     //<<<<<<<<<<<<<<<<<<<<SEARCHING>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
-
-
     //>>>>>>>>>>>>>>>>>>>>>>ADMIN: ADDING & REMOVING RESTAURANTS<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
     @Test
     public void remove_restaurant_should_reduce_list_of_restaurants_size_by_1() throws restaurantNotFoundException {
         int initialNumberOfRestaurants = service.getRestaurants().size();
