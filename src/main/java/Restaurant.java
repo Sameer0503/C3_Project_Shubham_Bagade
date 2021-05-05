@@ -8,7 +8,8 @@ public class Restaurant {
     private String location;
     public LocalTime openingTime;
     public LocalTime closingTime;
-    private List<Item> menu = new ArrayList<Item>();
+    private List<Item> menu = new ArrayList<>();
+    private List<Item> OrderList = new ArrayList<>();
 
     public Restaurant(String name, String location, LocalTime openingTime, LocalTime closingTime) {
         this.name = name;
@@ -69,4 +70,15 @@ public class Restaurant {
         return name;
     }
 
+    public void addToOrderList(String OrderItem) {
+
+    }
+
+    public List<Item> getOrderList() {
+        return null;
+    }
+
+    public int getOrderTotal(List<Item> orderList) {
+        return 0;
+    }
 }
